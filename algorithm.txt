@@ -1,5 +1,5 @@
 Constant MAX is max length of array
-frunction sort (array):
+function sort (array):
 	create integer variables i and j
 	for i from zero to MAX - 1:
 		for j from zero to MAX - 1:
