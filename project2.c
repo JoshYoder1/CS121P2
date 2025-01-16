@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void printValues(int*);
-void sort(int*);
+//void sort(int*);
 void swap(int*,int*);
 
 int main(){
@@ -15,10 +15,25 @@ int main(){
 	printf("x: %d, y: %d \n", x,y);
 	swap(&x, &y);
 	printf("x: %d, y: %d \n", x,y);
-
+/*
 	sort(values);
 	printf("After: \n");
 	printValues(values);
-
+*/
 	return 0;
 } // end main
+
+void printValues(int* list){
+	for (int i = 0; i < 9; i++) {
+	       printf("%d ", list[i]);
+	}
+	printf("\n");	
+}
+
+void swap(int* px, int* py){
+	int a = *px;
+	*px = *py;
+	*py = a;
+}
+
+// Some parts were coded with help from a friend
