@@ -34,7 +34,7 @@ void printValues(int* list){
 
 void swap(int* px, int* py){
 	int a = *px;
-	*px = *py;
+	*px  = *py;
 	*py = a;
 } // end swap
 
@@ -42,8 +42,10 @@ void sort(int* array){
 	int MAX = 9;
 	for(int i = 0; i<MAX; i++){
 		for(int j = 0; j<MAX; j++){
-			if(array[j] > array[j++]){
-			       swap(&j, &j+1);
+			if(array[j] > array[j+1]){
+				int *p1 = &array[j];
+				int *p2 = &array[j+1];
+			       swap(p1, p2);
 			       printValues(array);
 			}
 		}
