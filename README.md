@@ -1,11 +1,11 @@
-### CS121 Project 2
+# CS121 Project 2
 ## Bubble Sorting Algorithm
 The program is a bubble sorting algorithm and it is expected to sort a preset array of numbers.
-# Functions
+### Functions
 * printValues
 * sort
 * swap
-# Program
+### Program
 function void printValues(pointer)
 function void sort(pointer)
 function void swap(pointer, pointer)
